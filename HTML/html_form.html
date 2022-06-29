@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Demo</title>
+</head>
+
+<body>
+    <h1>Login form</h1>
+    <form action="/login">
+        <label for="">Username</label>
+        <input type="text" placeholder="Please Enter Username" Name="Username" id="uname">
+        <br>
+        <label for="">Password</label>
+        <input type="text" placeholder="Please Enter Username" Name="Username" id="uname">
+        <br>
+        <br>
+        <label>Do you like Cricket?
+            <input type="checkbox" name="Cricket">
+        </label>
+        <br>
+        <br>
+        <fieldset>
+            <legend> select your IPL team </legend>
+            <label>Chennai Super Kings
+                <input type="radio" name="Team" id="TeamCSK" value="CSK">
+            </label>
+            <br>
+            <label>Royal challegers Banglore
+                <input type="radio" name="Team" id="TeamRCB" value="RCB">
+            </label>
+            <br>
+            <label>Mumbai Indians
+                <input type="radio" name="Team" id="TeamMI" value="MI">
+            </label>
+        </fieldset>
+        <textarea name="" id="tal" cols="30" rows="10"
+        placeholder="provide more information about team"></textarea>
+        <div>
+            <select name="player" id="favplayer">
+            <option value="msg">select your player</option>
+            <option value="Virat kohli">Virat</option>
+            <option value="Rohit Sharma">Rohit</option>
+            <option value="KL Rahul">Rahul</option>
+            </select>
+            <div>
+                <input type="text" list="Sponsers">
+            <datalist id="Sponsers"> 
+                <option value="Swiggy">Swiggy</option>
+                <option value="Zomato">Zomato</option>
+                <option value="Cred">CRED</option>
+            </datalist>
+            </div>
+        </div>
+        <br>
+        <input type="Submit" value="login">
+    </form>
+</body>
+</html>
